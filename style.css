@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Light Mode */
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #333;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #141E30, #243B55);
+    color: #fff;
+}
+
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.5s;
+}
+
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* heading */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* search box */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px;
+    background: #ff7eb3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #ff4f81;
+}
+
+/* Weather card */
+.weather-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+}
+
+.dark-mode .weather-card {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Weather result */
+#weatherResult h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#weatherResult p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#weatherResult img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+/* Darkmode button */
+#themeToggle {
+    margin-top: 15px;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    background: #555;
+}
+
+
+
+
